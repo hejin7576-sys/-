@@ -1,0 +1,6 @@
+{
+  "name": "우리반 네컷",
+  "description": "유치원과 어린이집에서 아이들과 함께 찍는 귀여운 우리반 네컷 사진관! 5장 촬영 중 4장 선택, 테마 프레임 및 꾸미기 지원",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

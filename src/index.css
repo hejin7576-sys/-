@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'BusanDandiHandwriting';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2610132210@font-342/font-342/부산단디손글씨.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@theme {
+  --font-dandi: "BusanDandiHandwriting", cursive, sans-serif;
+  --font-jua: "Jua", cursive, sans-serif;
+  --font-gaegu: "Gaegu", cursive, sans-serif;
+  --font-gamja: "Gamja Flower", cursive, sans-serif;
+  --font-dongle: "Dongle", cursive, sans-serif;
+}
+
+.font-dandi {
+  font-family: 'BusanDandiHandwriting', cursive, sans-serif;
+}
+
+
+.font-jua {
+  font-family: 'Jua', cursive, sans-serif;
+}
+
+.font-gaegu {
+  font-family: 'Gaegu', cursive, sans-serif;
+}
+
+.font-gamja {
+  font-family: 'Gamja Flower', cursive, sans-serif;
+}
+
+.font-dongle {
+  font-family: 'Dongle', cursive, sans-serif;
+}
+
+@keyframes flashAnimation {
+  0% { opacity: 0; }
+  25% { opacity: 0.95; }
+  100% { opacity: 0; }
+}
+
+.camera-flash {
+  animation: flashAnimation 0.4s ease-out;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-photo-strip, #printable-photo-strip * {
+    visibility: visible;
+  }
+  #printable-photo-strip {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none !important;
+  }
+}
